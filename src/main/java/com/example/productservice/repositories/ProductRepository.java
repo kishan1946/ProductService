@@ -10,5 +10,5 @@ import java.util.List;
 public interface ProductRepository extends JpaRepository<Product, Long> {
     Product save(Product product);
     Product findProductById(long productId);
-//    List<Product> findAllByPublicIsTrue();
+    List<Product> findAllByIsPublicTrue();
 }
